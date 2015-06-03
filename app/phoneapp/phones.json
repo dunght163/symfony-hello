@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Google Nexus 7",
+    "snippet": "Google Nexus7 - Wifi - 2012",
+    "age": 2012,
+    "imageUrl": "phoneapp/img/google-nexus-7-wifi.jpg"
+  },
+  {
+    "name": "Google Nexus 7 new",
+    "snippet": "Google Nexus7 new - Wifi + 3G - 2013",
+    "age": 2013,
+    "imageUrl": "phoneapp/img/google-nexus-7-wifi-3g.jpg"
+  },
+  {
+    "name": "Asus Zenfone 4",
+    "snippet": "Asus Zenfone 4 - 8GB - 2013",
+    "age": 2013,
+    "imageUrl": "phoneapp/img/asus-zenfone-4.png"
+  },
+  {
+    "name": "Asus Zenfone 5",
+    "snippet": "Asus Zenfone 5 - 16GB - 2014",
+    "age": 2014,
+    "imageUrl": "phoneapp/img/asus-zenfone-5.png"
+  },
+  {
+    "name": "Iphone 5s",
+    "snippet": "Iphone 5s - 16GB - 2013",
+    "age": 2013,
+    "imageUrl": "phoneapp/img/iphone-5s.png"
+  }
+]

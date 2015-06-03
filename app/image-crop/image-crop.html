@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Test</title>
+    <script src="image-crop.js"></script>
+    <link rel="stylesheet" href="image-crop-style.css">
+</head>
+<body>
+    <div ng-controller="MainController">
+        <h2>Angular Image Cropper</h2>
+        <p>An AngularJS Directive by <a href="https://twitter.com/andyshora">@andyshora</a></p>
+        <hr>
+        <p ng-hide="imageCropResult||imageCropStep!=1">Let's get started &rarr; <a ng-click="showImageCropper=true;imageCropStep=1">Crop Image</a></p>
+        <p ng-show="imageCropResult">Wanna start over? &rarr; <a ng-click="imageCropResult=null;imageCropStep=1">Reset</a></p>
+        <image-crop
+                data-width="300"
+                data-height="300"
+                data-shape="circle"
+                data-step="imageCropStep"
+                data-result="imageCropResult"
+                ng-show="showImageCropper"
+                ></image-crop>
+        <p>* Note that the last 2 parameters shown must exist as variables in the scope of the controller.</p>
+
+        <hr>
+        <h2>Result</h2>
+        <div ng-show="imageCropResult">
+            <img ng-src="{{ imageCropResult }}" alt="The Cropped Image">
+            <p>And this is the actual data uri which represents the cropped image, which you'll then upload to your server:</p>
+            <textarea class="result-datauri">{{ imageCropResult }}</textarea>
+        </div>
+
+        <p ng-hide="imageCropResult">Not cropped yet</p>
+    </div>
+</body>
+</html>
