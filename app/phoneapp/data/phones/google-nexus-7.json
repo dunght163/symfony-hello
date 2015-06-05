@@ -1,0 +1,29 @@
+{
+  "description": "Near Field Communications (NFC)",
+  "additionalFeatures": "Near Field Communications (NFC)",
+  "android": {
+    "os": "Android 4.0.3",
+    "ui": "Android"
+  },
+  "images": [
+    "img/phones/nexus-7.0.jpg",
+    "img/phones/nexus-7.1.jpg",
+    "img/phones/nexus-7.2.jpg",
+    "img/phones/nexus-7.3.jpg"
+  ],
+  "storage": {
+    "flash": "16384MB",
+    "ram": "512MB"
+  },
+  "availability": [
+    "3G",
+    "NFC",
+    "GPS",
+    "4K Camera"
+  ],
+  "specs": {
+    "3g": "HSDPA 7.2Mbs",
+    "gps": "GLONASS",
+    "water-resist": "3m"
+  }
+}

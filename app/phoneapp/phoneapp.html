@@ -5,38 +5,14 @@
     <title>My phoneapp</title>
 
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
     <script src="phoneapp/phoneappController.js"></script>
+    <script src="phoneapp/filter/filter.js"></script>
 </head>
-<body ng-controller="phoneappController">
-    <div>
-        <!--search content-->
-        Search: <input ng-model="query">
+<body>
+    <div ng-view>
 
-        Sort by:
-        <select ng-model="orderProp">
-            <option value="name">Alphabetical</option>
-            <option value="age">Newest</option>
-            <option value="-age">Oldest</option>
-        </select>
-
-        Max result: <input ng-model="maxResult">
-    </div>
-
-    <div>
-        <ul>
-            <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
-                <img ng-src="{{phone.imageUrl}}" width="200" height="200">
-                <span>{{phone.name}}</span>
-                <p>{{phone.snippet}}</p>
-                <p>Age: {{phone.age}}</p>
-            </li>
-        </ul>
-        <p>Page <span style="color: #0000FF" ng-repeat="i in ['<<', '<', 1, 2, 3, 4, 5, 6, 7, '>', '>>']"> {{i}} </span></p>
-        <p>Total number phone: {{phones.length}}</p>
-    </div>
-
-    <div>
-        <p>Author: {{author}}</p>
     </div>
 </body>
 </html>
