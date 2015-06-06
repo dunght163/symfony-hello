@@ -5,9 +5,26 @@
     'use strict';
 
     angular.module('myApp.phoneApp.phoneApp-filter', [])
-        .filter('checkmark', filterCheckmark);
+        .filter('reverse', function () {
+            return function (input, uppercase) {
+                input = input || '';
+                var out = "";
+                for (var i = 0; i < input.length; i++) {
+                    out = input.charAt(i) + out;
+                }
+                // conditional based on optional argument
+                if (uppercase) {
+                    out = out.toUpperCase();
+                }
+                return out;
+            };
+        })
 
-    function filterCheckmark(input) {
-        return input ? '*YES*' : '*NO*'; //or use: (\u2713 -> ✓) or false (\u2718 -> ✘)
+        .filter('checkMark', function () {
+            return filterCheckMark;
+        });
+
+    function filterCheckMark(input) {
+        return input ? '\u2713' : '\u2718'; //(\u2713 -> ✓) or false (\u2718 -> ✘)
     }
 })();

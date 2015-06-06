@@ -19,11 +19,11 @@ This detail for <span>{{phoneId}}</span>
     </li>
     <li>
         <span>Specs: </span>
-        <!--<p><span>{{phone.specs['3g'] | phoneAppFilter}}</span>           3g: {{phone.specs['3g']}} </p>-->
-        <!--<p><span>{{phone.specs.gps | checkmark}}</span>             gps: {{phone.specs.gps}} </p>-->
-        <!--<p><span>{{phone.specs['water-resist'] | checkmark}}</span> water resis: {{phone.specs['water-resist']}} </p>-->
-        <p>3g: {{phone.specs['3g']}} </p>
-        <p>gps: {{phone.specs.gps}} </p>
-        <p>water resis: {{phone.specs['water-resist']}} </p>
+
+        <p><span>{{phone.specs['3g'] | checkMark}}</span> 3g: {{phone.specs['3g']}} </p>
+
+        <p><span>{{phone.specs.gps | checkMark}}</span> gps: {{phone.specs.gps}} </p>
+
+        <p><span>{{phone.specs['water-resist'] | checkMark}}</span> water resis: {{phone.specs['water-resist']}} </p>
     </li>
 </ul>
