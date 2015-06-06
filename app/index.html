@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body class="body">
   <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view1">Home page</a></li>
     <li><a href="#/view2">view2</a></li>
-    <li><a href="#/phoneapp">PhoneApp</a></li>
+    <li><a href="#/phoneApp">Phone App</a></li>
     <li><a href="#/image-crop">Image Crop</a></li>
   </ul>
 
@@ -28,7 +28,7 @@
 
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div class="tail">Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -41,7 +41,17 @@
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
-  <script src="phoneapp/phoneappController.js"></script>
+  <script></script>
+  <script src="phoneApp/phoneapp.module.js"></script>
+  <script src="phoneApp/phoneapp.controller.js"></script>
+  <script src="phoneApp/route.config.js"></script>
+  <script src="phoneApp/filter/phoneapp-filter.js"></script>
+  <script src="phoneApp/dashboard/dashboard.module.js"></script>
+  <script src="phoneApp/dashboard/phone-list/phone-list.module.js"></script>
+  <script src="phoneApp/dashboard/phone-manager/phone-manager.module.js"></script>
+  <script></script>
   <script src="image-crop/image-crop.js"></script>
+  <script src="image-crop/image-crop-Controller.js"></script>
+  <script></script>
 </body>
 </html>

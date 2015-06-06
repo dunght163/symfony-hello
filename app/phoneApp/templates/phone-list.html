@@ -15,10 +15,10 @@
 <div>
     <ul>
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
-            <a href="#/phoneapp/{{phone.id}}">
+            <a href="#/phoneApp/{{phone.id}}">
                 <img ng-src="{{phone.imageUrl}}" width="200" height="200">
             </a>
-            <a href="#/phoneapp/{{phone.id}}">
+            <a href="#/phoneApp/{{phone.id}}">
                 <span>{{phone.name}}</span>
             </a>
             <p>{{phone.snippet}}</p>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp.phoneApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My phoneApp</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="phoneapp.module.js"></script>
+    <script src="route.config.js"></script>
+    <script src="phoneapp.controller.js"></script>
+    <script src="filter/phoneapp-filter.js"></script>
+    <script src="dashboard/dashboard.module.js"></script>
+</head>
+<body>
+    <div ng-view>
+
+    </div>
+
+    <hr/>
+    <div class="tail">
+        <p>Tail of page</p>
+    </div>
+</body>
+</html>
