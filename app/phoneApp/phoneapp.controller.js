@@ -12,7 +12,7 @@
     function phoneListController($scope, $http) {
         $scope.maxResult = 5;
 
-        $http.get('phoneApp/data/phones/phones.json').success(function (data) {
+        $http.get('phoneApp/resources/data/phones/phones.json').success(function (data) {
             $scope.phones = data.slice(0, $scope.maxResult);
         });
 
@@ -24,7 +24,7 @@
     function phoneDetailController($scope, $routeParams, $http) {
         $scope.phoneId = $routeParams.phoneId;
 
-        $http.get('phoneApp/data/phones/' + $routeParams.phoneId + '.json').success(function (data) {
+        $http.get('phoneApp/resources/data/phones/' + $routeParams.phoneId + '.json').success(function (data) {
             $scope.phone = data;
         });
     };

@@ -6,10 +6,10 @@
     "ui": "Android"
   },
   "images": [
-    "img/phones/nexus-7.0.jpg",
-    "img/phones/nexus-7.1.jpg",
-    "img/phones/nexus-7.2.jpg",
-    "img/phones/nexus-7.3.jpg"
+    "resources/img/phones/nexus-7.0.jpg",
+    "resources/img/phones/nexus-7.1.jpg",
+    "resources/img/phones/nexus-7.2.jpg",
+    "resources/img/phones/nexus-7.3.jpg"
   ],
   "storage": {
     "flash": "16384MB",
